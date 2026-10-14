@@ -1,0 +1,360 @@
+body {
+    font-family     : Arial, sans-serif;
+    background      : #f4f6f8;
+    margin          : 0;
+    padding         : 30px;
+}
+
+.container {
+    width           : 90%;
+    margin          : auto;
+    background      : white;
+    padding         : 25px;
+    border-radius   : 10px;
+}
+
+h1.container {
+    margin-bottom   : 0px;
+    text-align: center;
+}
+
+table {
+    width           : 100%;
+    border-collapse : collapse;
+}
+
+table th,
+table td {
+    border          : 1px solid #ddd;
+    padding         : 10px;
+}
+
+table th {
+    background      : #eeeeee;
+}
+
+input,
+select,
+textarea {
+    width           : 100%;
+    padding         : 10px;
+    margin-bottom   : 15px;
+    box-sizing      : border-box;
+}
+
+button,
+.btn {
+    display         : inline-block;
+    padding         : 10px 15px;
+    text-decoration : none;
+    border          : none;
+    cursor          : pointer;
+    border-radius   : 10px;
+}
+
+.btn {
+    width : 50%
+}
+
+.tombol-dashboard {
+    width           : auto;
+    background      : #0d6efd;
+    color           : white;
+    font            : inherit;
+}
+
+button {
+    background      : #0d6efd;
+    color           : white;
+    font            : inherit;
+}
+
+.kolom-cari input{
+    margin-top      : 10px;
+    border-top      : 25px ;
+    border          : 1px solid #cbd5e1;
+    border-radius   : 8px;
+    padding         : 12px 14px;
+    background      : white;
+    width           : 50%;
+}
+
+
+.kolom-cari + .btn {
+    width           : 50%;
+    padding         : 0;
+    box-sizing      : border-box;
+}
+
+.kolom-cari + .btn button {
+    width           : 50%;
+    box-sizing      : border-box;
+}
+
+
+a {
+    text-decoration : none;
+    display         : inline-block;
+    padding         : 10px 15px;
+    text-decoration : none;
+    border          : none;
+    cursor          : pointer;
+    border-radius   : 10px;
+}
+
+.judul-siswa h1 {
+    margin          : 0;
+    color           : #1e293b;
+    font-size       : 26px;
+    letter-spacing  : 1px;
+}
+
+.btn-kembali-dashboard {
+    margin-top      : 12px;
+    padding         : 8px 16px;
+    background      : #6c757d;
+    color           : white;
+    border-radius   : 8px;
+    text-decoration : none;
+    font-size       : 14px;
+    font-weight     : 500;
+    transition      : background 0.2s;
+}
+
+.btn-kembali-dashboard:hover {
+    background      : #5a6268;
+}
+
+.judul-siswa {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : flex-start;
+    padding         : 20px 24px;
+    background      : #f8fafc;
+    border          : 1px solid #e2e8f0;
+    border-left     : 5px solid #0d6efd;
+    border-radius   : 12px;
+    box-shadow      : 0 4px 12px rgba(15, 23, 42, 0.06);
+    gap             : 8px;
+}
+
+.area-pencarian-siswa {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : stretch;
+}
+
+.tombol-tambah-siswa {
+    align-self      : flex-end;
+    margin-top      : 12px;
+    background      : #0d6efd;
+    color           : white;
+    font            : inherit;
+    white-space     : nowrap;
+}
+
+.pencarian-siswa {
+    width           : 50%;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : flex-start;
+}
+
+.pencarian-siswa label {
+    text-align      : left;
+}
+
+.pencarian-siswa .kolom-cari,
+.pencarian-siswa .kolom-cari + .btn {
+    width           : 100%;
+}
+
+.pencarian-siswa .kolom-cari input {
+    width           : 100%;
+}
+
+.pencarian-siswa .kolom-cari + .btn {
+    display         : flex;
+    gap             : 8px;
+    padding         : 0;
+}
+
+.pencarian-siswa .kolom-cari + .btn button {
+    flex            : 1;
+}
+
+.tombol-reset-cari {
+    background      : #6c757d;
+    color           : white;
+    text-align      : center;
+}
+
+.aksi-siswa {
+    display         : flex;
+    align-items     : center;
+    gap             : 8px;
+}
+
+.tombol-aksi {
+    display         : inline-flex;
+    align-items     : center;
+    padding         : 8px 12px;
+    color           : white;
+    font            : inherit;
+    border-radius   : 10px;
+}
+
+.tombol-edit {
+    background      : #198754;
+}
+
+.tombol-hapus {
+    background      : #dc3545;
+}
+
+.dialog-konfirmasi-hapus {
+    width           : min(90%, 400px);
+    padding         : 24px;
+    border          : none;
+    border-radius   : 10px;
+    box-shadow      : 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.dialog-konfirmasi-hapus::backdrop {
+    background      : rgba(0, 0, 0, 0.45);
+}
+
+.aksi-konfirmasi-hapus {
+    display         : flex;
+    justify-content : flex-end;
+    align-items     : center;
+    gap             : 8px;
+}
+
+.aksi-konfirmasi-hapus .tombol-batal-hapus {
+    background      : #6c757d;
+}
+
+.tombol-konfirmasi-hapus {
+    font            : inherit;
+}
+
+/* ===== FILTER LAYOUT (Level 2.3) ===== */
+.filter-row {
+    display         : flex;
+    flex-wrap       : wrap;
+    gap             : 20px;
+    margin-bottom   : 16px;
+    align-items     : flex-end;
+}
+
+.filter-group {
+    flex            : 1;
+    min-width       : 200px;
+    display         : flex;
+    flex-direction  : column;
+}
+
+.filter-group label {
+    margin-bottom   : 6px;
+    font-weight     : 600;
+    color           : #374151;
+    font-size       : 14px;
+}
+
+.filter-select {
+    width           : 100%;
+    padding         : 10px 12px;
+    border          : 1px solid #d1d5db;
+    border-radius   : 8px;
+    font-size       : 14px;
+    background      : white;
+    box-sizing      : border-box;
+    cursor          : pointer;
+    transition      : border-color 0.2s, box-shadow 0.2s;
+}
+
+.filter-select:focus {
+    outline         : none;
+    border-color    : #0d6efd;
+    box-shadow      : 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+.filter-actions {
+    display         : flex;
+    gap             : 10px;
+    flex-wrap       : wrap;
+}
+
+.btn-filter {
+    background      : #0d6efd;
+    color           : white;
+    border          : none;
+    padding         : 10px 20px;
+    border-radius   : 8px;
+    font            : inherit;
+    cursor          : pointer;
+    font-weight     : 600;
+    transition      : background 0.2s;
+}
+
+.btn-filter:hover {
+    background      : #0b5ed7;
+}
+
+/* Override existing .pencarian-siswa untuk layout baru */
+.pencarian-siswa {
+    width           : 100%;
+}
+
+/* Responsive: stack filters on mobile */
+@media (max-width: 768px) {
+    .filter-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        min-width: 100%;
+    }
+    
+    .filter-actions {
+        justify-content: flex-start;
+    }
+}
+
+/* ===== FOTO SISWA (Level 3) ===== */
+.foto-preview {
+    margin-bottom: 10px;
+}
+
+.foto-preview img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+input[type="file"] {
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+}
+
+input[type="file"]:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+/* Table photo column */
+td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
